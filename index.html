@@ -1,123 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="Media/images/cute employee face.png" type="image/x-icon">
+    <title>Mohammed Daanish Shaikh | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Media/images/cute employee face.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <link rel="stylesheet" href="./style/style.css"/>
-    <style>
-        body{
-            background-color: #Ffff00;
-        }
-    </style>
-    <title>Document</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-<body style="background-color: rgb(155, 207, 231);">
-    <!-- This is how you comment in HTML -->
-    <!-- Name -->
-    <h1 class="nam">Mohammed Daanish Shaikh</h1>
-    <p>Coding Enthusiast</p>
-    <h2>Profile</h2>
-    <p class="nam">I consider myself a responsible
-        and orderly person.
-        I have a very interesting
-        personality.
-        With a mixture of pure hard
-        work, a lather of creativity, a
-        tinge of strictness and a taste
-        for creativity and novelty, I am
-        always a first pick for anyone
-        interested in hiring an
-        exceptional employee.</p>
-        <hr>
-        <h2>Education</h2>
-        <h3>Gopi Birla Memorial School (CBSE)</h3>
-        <p>Passed 10th with 94%</p>
-        <h3>K.C. COLLEGE(MUMBAI’S BEST
-            COLLEGE FOR SCIENCE)</h3>
-            <p>Std 11th and 12th</p>
-        <h3>National Institute of Open Schooling (NIOS)</h3>
-        <p>74% in Physics Chemistry And Maths</p>
-        <h3>IIT MADRAS</h3>
-        <p>First Year Bachelor of Science
-            in Data Science and its Applications</p>
-            <hr>
-            <h3>Programming skills</h3>
-            <p>C</p>
-            <p>C++</p>
-            <p>Git and Git Hub</p>
-            <hr>
-            <h3>Soft Skills</h3>
-            <p>Confident Speaker</p>
-            <p>Entertaining Host</p>
-                <p>Formidable Debator</p>
-                    <p>Tactical Competitor</p>
-                        <p>Supportive and Intelligent Leader</p>
-                            <p>Creative and Quick Problem Solver</p>
-                                <p>Melodious Singer</p>
-                                <hr>
-            <h3>Languages</h3>
-            <p>Advanced English</p>
-                <p>Advanced Hindi</p>
-                    <p>Urdu</p>
-                        <p>Arabic(reading and writing)</p>
-                            <p>Marathi(Reading and Writing)</p>
-                            <hr>
-            <h2>Some of my astounding works in</h2>
-            <a href="https://github.com/DaanishShaikh/CProgramming.git" target="_blank">C Programming</a>
-                <br>
-            <a href="https://github.com/DaanishShaikh/CPP.git" target="_blank">C++</a>
-            <br>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="nav-content">
+            <a href="#hero" class="logo">MDS.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <i class="ph ph-sun" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text reveal">
+                    <span class="greeting">Hello, I am</span>
+                    <h1 class="name-title"><span class="gradient-text">Mohammed Daanish Shaikh</span></h1>
+                    <h2 class="role-title typing-effect">Coding Enthusiast</h2>
+                    <p class="hero-desc">Building elegant solutions, pursuing perfection, and aiming for the stars.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="ph ph-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper reveal delay-1">
+                    <div class="image-glass">
+                        <img src="Media/images/cute employee face.png" alt="Mohammed Daanish Shaikh" class="profile-img">
+                        <div class="floating-badge badge-1"><i class="ph-fill ph-code"></i> Developer</div>
+                        <div class="floating-badge badge-2"><i class="ph-fill ph-student"></i> IIT Madras</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+                <div class="about-content glass-card reveal delay-1">
+                    <div class="about-text">
+                        <p>I consider myself a <strong>responsible and orderly person</strong>. I have a very interesting personality.</p>
+                        <p>With a mixture of pure hard work, a lather of creativity, a tinge of strictness and a taste for creativity and novelty, I am always a first pick for anyone interested in hiring an <strong>exceptional employee</strong>.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>IIT-M</h3>
+                            <p>Data Science</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5</h3>
+                            <p>Spoken Languages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title reveal">My <span class="gradient-text">Journey</span></h2>
+                <div class="timeline reveal delay-1">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Present</span>
+                            <h3>IIT MADRAS</h3>
+                            <h4>Bachelor of Science</h4>
+                            <p>Data Science and its Applications (First Year)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">High School</span>
+                            <h3>K.C. COLLEGE</h3>
+                            <h4>Std 11th and 12th</h4>
+                            <p>Mumbai's best college for science.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">High School equivalent</span>
+                            <h3>National Institute of Open Schooling (NIOS)</h3>
+                            <p>74% in Physics, Chemistry, and Maths.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">School</span>
+                            <h3>Gopi Birla Memorial School (CBSE)</h3>
+                            <p>Passed 10th standard with a stellar 94%.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title reveal">My <span class="gradient-text">Arsenal</span></h2>
+                
+                <div class="skills-grid">
+                    <!-- Tech Skills -->
+                    <div class="skill-category glass-card reveal">
+                        <h3><i class="ph-bold ph-terminal-window"></i> Programming</h3>
+                        <div class="skills-list">
+                            <div class="skill-pill">C</div>
+                            <div class="skill-pill">C++</div>
+                            <div class="skill-pill">Git</div>
+                            <div class="skill-pill">GitHub</div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-category glass-card reveal delay-1">
+                        <h3><i class="ph-bold ph-users"></i> Soft Skills</h3>
+                        <ul class="feature-list">
+                            <li><i class="ph-bold ph-check-circle"></i> Confident Speaker</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Entertaining Host</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Formidable Debator</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Tactical Competitor</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Supportive & Intelligent Leader</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Creative Problem Solver</li>
+                            <li><i class="ph-bold ph-check-circle"></i> Melodious Singer</li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-category glass-card reveal delay-2">
+                        <h3><i class="ph-bold ph-translate"></i> Languages</h3>
+                        <ul class="feature-list">
+                            <li><i class="ph-bold ph-chat-centered-text"></i> English (Advanced)</li>
+                            <li><i class="ph-bold ph-chat-centered-text"></i> Hindi (Advanced)</li>
+                            <li><i class="ph-bold ph-chat-centered-text"></i> Urdu</li>
+                            <li><i class="ph-bold ph-chat-centered-text"></i> Arabic (Reading/Writing)</li>
+                            <li><i class="ph-bold ph-chat-centered-text"></i> Marathi (Reading/Writing)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pofolio / Works -->
+        <section id="works" class="works-section">
+            <div class="container">
+                <h2 class="section-title reveal">Astounding <span class="gradient-text">Works</span></h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <a href="https://github.com/DaanishShaikh/CProgramming.git" target="_blank" class="project-card glass-card reveal">
+                        <div class="project-icon">
+                            <i class="ph-bold ph-code"></i>
+                        </div>
+                        <h3>C Programming Mastery</h3>
+                        <p>Repository containing various algorithms, data structures, and problem-solving exercises in C.</p>
+                        <div class="project-link">View on GitHub <i class="ph-bold ph-arrow-up-right"></i></div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="https://github.com/DaanishShaikh/CPP.git" target="_blank" class="project-card glass-card reveal delay-1">
+                        <div class="project-icon">
+                            <i class="ph-bold ph-file-cpp"></i>
+                        </div>
+                        <h3>C++ Projects</h3>
+                        <p>Object-oriented programming implementations, competitive programming solutions, and modern C++ practices.</p>
+                        <div class="project-link">View on GitHub <i class="ph-bold ph-arrow-up-right"></i></div>
+                    </a>
+                </div>
+
+                <div class="coding-platforms glass-card reveal delay-2 mt-4">
+                    <h3>Where I Practice Coding</h3>
+                    <div class="platforms-flex">
+                        <a href="https://codeforces.com/profile/daanish_shaikh" target="_blank" class="platform-link">
+                            <img src="Media/images/code forces symbol.png" alt="CodeForces">
+                        </a>
+                        <a href="https://www.hackerrank.com/dashboard" target="_blank" class="platform-link">
+                            <img src="Media/images/hackerrank.png" alt="HackerRank">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-card glass-card reveal">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="contact-subtitle">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-phone"></i></div>
+                            <div class="contact-details">
+                                <span>Call Me</span>
+                                <strong>+91 9820325222</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-envelope"></i></div>
+                            <div class="contact-details">
+                                <span>Email Me</span>
+                                <strong><a href="mailto:daanish222@gmail.com">daanish222@gmail.com</a></strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph-bold ph-map-pin"></i></div>
+                            <div class="contact-details">
+                                <span>Location</span>
+                                <strong>Worli, Mumbai - 400018</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Mohammed Daanish Shaikh. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Theme Toggle Logic
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
-            <br>
-            <hr>
-            <h3>CONTACT ME</h3>
-            <img src="Media/images/phone symbol.png" alt="" height="10px" width="10px"> 
-            <span class="text-next-to-image">+91 9820325222</span>
-            <br>
-            <img src="Media/images/e-mail logo.png" alt="" height="10px" width="10px">
-            <a href="mailto:daanish222@gmail.com" target="_blank">daanish222@gmail.com</a>
-            <br>
-            <img src="Media/images/location symbol.png" alt="" height="15px" width="15px">
-            <span class="text-next-to-image">J-19, Jijamata
-                Nagar, Dr. E.
-                Moses Road, Worli,
-                Mumbai - 400018</span> 
-                <br>
-                <br>
-                <hr>
-        <table border="" >
-            <th>
-                <td1>Name</td1>
-                
-            </th>
-            <th>
-                <td2>Gender</td2>
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
 
-            </th>
-            <tr>
-                <td>Daanish</td>
-                <td>Male</td>
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.classList.replace('ph-moon', 'ph-sun');
+            } else {
+                themeIcon.classList.replace('ph-sun', 'ph-moon');
+            }
+        }
 
-                
-            </tr>
-
-        </table>
-        <br>
-        <hr>
-        <h3>Websites where i practice coding</h3>
-        
-        <br>
-        <span class="image-next-to-image">
-            <a href="https://codeforces.com/profile/daanish_shaikh" target="_blank">
-              <img src="Media/images/code forces symbol.png" alt="" height="100px" width="200px">
-          </a>
-          </span>
-        <a href="https://www.hackerrank.com/dashboard" target="_blank">
-            <img src="Media/images/hackerrank.png" alt="" height="100px" width="140px">
-        </a>
-        
-
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger reveal on load
+        reveal();
+    </script>
 </body>
 </html>
